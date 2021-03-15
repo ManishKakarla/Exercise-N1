@@ -12,15 +12,16 @@
     <table style="width:100%" border="3px" >
         <tr bgcolor="#ffc0cb">
             <th>name</th>
-            <th>price</th>
+            <th>age</th>
+            <th>title</th>
             <th>year</th>
-            <th>Average Rating</th>
-            <th>Horse Power</th>
         </tr>
         <% results.forEach(function(r) { %>
             <tr bgcolor="#ffc0cb">
                 <td align="center"><%= r.name %></td>
                 <td align="center"><%= r.age %></td>
+                <td align="center"><%= r.title %></td>
+                <td align="center"><%= r.year %></td>
             </tr>
         <% }); %>
     </table>

@@ -32,7 +32,7 @@ router.get('/', function (request, response) {
 
 
 
-    mongodb.MongoClient.connect('mongodb+srv://manish:Qwertyuiop1@cluster0.nrljg.mongodb.net/manish?retryWrites=true&w=majority', function(err, client) {
+    mongodb.MongoClient.connect('mongodb+srv://manish:Qwertyuiop1@cluster0.wlhxp.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', function(err, client) {
 
         // mongodb.MongoClient.connect(process.env.MONGODB_URI, function(err, db) {  // works with mongodb v2 but not v3
 
@@ -41,7 +41,7 @@ router.get('/', function (request, response) {
         //get collection of routes
 
         var db = client.db('manish');  // in v3 we need to get the db from the client
-
+1
         var Routes = db.collection('exercisen1');
 
         //get all Routes with frequency >=1
